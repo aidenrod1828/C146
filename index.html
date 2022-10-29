@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #white">
+
+        <!--Camera-->
+        <a-entity position="0 15 30">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <!--floor-->
+        <a-entity>
+            <a-box color="black" depth="40" height="0.1" width="40"></a-box>
+        </a-entity>
+
+        <!--Foot 1-->
+        <a-entity position="-3 -1 0" rotation="0 0 0">
+            <a-sphere color="tomato" radius="3"></a-sphere>
+        </a-entity>
+
+        <!--Foot 2-->
+        <a-entity position="3 -1 0" rotation="0 0 0">
+            <a-sphere color="tomato" radius="3"></a-sphere>
+        </a-entity>
+
+        <!--leg 1-->
+        <a-entity position="-3 1 0" rotation="0 0 0">
+            <a-cylinder color="gold" height="15" radius="1.3"></a-cylinder>
+        </a-entity>
+        
+        <!--leg 2-->
+        <a-entity position="3 1 0" rotation="0 0 0">
+            <a-cylinder color="gold" height="15" radius="1.3"></a-cylinder>
+        </a-entity>
+
+        <!--body-->
+        <a-entity position="0 12 0" rotation="0 0 0">
+            <a-box color="blue" depth="3" height="10" width="10"></a-box>
+        </a-entity>
+
+        <!--arm1-->
+        <a-entity position="-6.5 12 0" rotation="0 0 135">
+            <a-cylinder color="gold" height="8" radius="1.2"></a-cylinder>
+        </a-entity>
+
+        <!--joint1-->
+        <a-entity position="-9.5 9 0" rotation="0 0 0">
+            <a-sphere color="tomato" radius="1.5"></a-sphere>
+        </a-entity>
+
+        <!--forearm1-->
+        <a-entity position="-11 10.3 0" rotation="0 0 45">
+            <a-cylinder color="yellow" height="5" radius="1.2"></a-cylinder>
+        </a-entity>
+
+        <!--hand1-->
+        <a-entity position="-13.5 12.8 0" rotation="0 0 0">
+            <a-dodecahedron color="blue" radius="1.5"></a-dodecahedron>
+        </a-entity>
+
+        <!--arm2-->
+        <a-entity position="6.5 12 0" rotation="0 0 -135">
+            <a-cylinder color="gold" height="8" radius="1.2"></a-cylinder>
+        </a-entity>
+
+        <!--joint2-->
+        <a-entity position="9.5 9 0" rotation="0 0 0">
+            <a-sphere color="tomato" radius="1.5"></a-sphere>
+        </a-entity>
+
+        <!--forearm1-->
+        <a-entity position="11 10.3 0" rotation="0 0 -45">
+            <a-cylinder color="yellow" height="5" radius="1.2"></a-cylinder>
+        </a-entity>
+
+        <!--hand2-->
+        <a-entity position="13.5 12.8 0" rotation="0 0 0">
+            <a-dodecahedron color="blue" radius="1.5"></a-dodecahedron>
+        </a-entity>
+
+        <!--neck-->
+        <a-entity position="0 17 0" rotation="0 0 0">
+            <a-box color="yellow" depth="2" height="1.5" width="5"></a-box>
+        </a-entity>
+
+        <!--head-->
+        <a-entity position="0 20 0" rotation="0 0 0">
+            <a-box color="blue" depth="7" height="5" width="7"></a-box>
+
+        </a-entity>
+
+        <!--top head-->
+        <a-entity position="0 21.5 0" rotation="0 0 0">
+            <a-sphere color="tomato" radius="3"></a-sphere>
+        </a-entity>
+
+        <!--left eye-->
+        <a-entity position="-1.3 21 2.5" rotation="0 0 0">
+            <a-sphere color="white" radius="1.3"></a-sphere>
+        </a-entity>
+
+        <!--right eye-->
+        <a-entity position="1.3 21 2.5" rotation="0 0 0">
+            <a-sphere color="white" radius="1.3"></a-sphere>
+        </a-entity>
+
+        <!--Neptune-->
+        <a-entity position="-1.3 21 4" rotation="0 0 0">
+            <a-sphere color="black" radius="0.5"></a-sphere>
+        </a-entity>
+
+        <!--Neptune-->
+        <a-entity position="1.3 21 4" rotation="0 0 0">
+            <a-sphere color="black" radius="0.5"></a-sphere>
+        </a-entity>
+
+        <a-entity position="0 19 5" rotation="0 0 0">
+            <a-box color="yellow" depth="1" height="0.2" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="0 12 0" rotation="0 0 0">
+            <a-box color="blue" depth="3" height="10" width="10"></a-box>
+        </a-entity>
+
+        <a-entity position="-3.2 15.4 0" rotation="0 0 0">
+            <a-box color="pink" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="0.05 15.4 0" rotation="0 0 0">
+            <a-box color="orange" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="3.2 15.4 0" rotation="0 0 0">
+            <a-box color="green" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="-3.2 12.2 0" rotation="0 0 0">
+            <a-box color="lightblue" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="0.05 12.2 0" rotation="0 0 0">
+            <a-box color="red" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="3.2 12.2 0" rotation="0 0 0">
+            <a-box color="purple" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="-3.2 9 0" rotation="0 0 0">
+            <a-box color="yellow" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="0.05 9 0" rotation="0 0 0">
+            <a-box color="gray" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="3.2 9 0" rotation="0 0 0">
+            <a-box color="white" depth="5" height="3" width="3"></a-box>
+        </a-entity>
+
+        <a-entity position="0 22 0" rotation="0 0 0">
+            <a-box color="gray" depth="0.1" height="10" width="0.3"></a-box>
+        </a-entity>
+
+        <a-entity position="0 27 0" rotation="0 0 0">
+            <a-sphere color="blue" radius="0.5"></a-sphere>
+        </a-entity>
+
+    </a-scene>
+</body>
+
+</html>
